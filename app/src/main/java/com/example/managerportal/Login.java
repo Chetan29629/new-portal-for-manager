@@ -94,6 +94,9 @@ public class Login extends AppCompatActivity {
         loginBtn = findViewById(R.id.loginBtn);
         progressbar = findViewById(R.id.progressbar);
 
+        Email.setText(administratorEmail);
+        Password.setText(administratorPassword);
+
         // When user click on login button first we have to validate the form and then we have to check whether the information that user given is correct or not. If information is correct then go to Dashboard Activity otherwise Toast invalid credentials.
         loginBtn.setOnClickListener(view -> {
             String email = Email.getText().toString();

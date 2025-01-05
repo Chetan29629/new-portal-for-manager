@@ -263,7 +263,7 @@ public class Dashboard extends AppCompatActivity {
                     NewCourse course = document.toObject(NewCourse.class);
                     courseList.add(course);
                 }
-
+Log.e("courseList","" + courseList.size());
                 // Initialize RecyclerView
                 RecyclerView recyclerView = findViewById(R.id.RecyclerView);
                 recyclerView.setLayoutManager(new GridLayoutManager(this, 2));

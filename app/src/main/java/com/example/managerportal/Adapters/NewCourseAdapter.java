@@ -1,6 +1,7 @@
 package com.example.managerportal.Adapters;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,8 +39,11 @@ public class NewCourseAdapter extends RecyclerView.Adapter<NewCourseAdapter.View
         NewCourse course = courseList.get(position); // step 5 NewCourseModel course = courseList.get(position)
         holder.Name.setText(course.getName());
 
+        Log.e("Course Name ","-" + course.getName());
+        Log.e("Course Image ","-" + course.getURL());
+
         Glide.with(context)
-                .load(course.getImage()) // Load image from URL
+                .load(course.getURL()) // Load image from URL
                 .placeholder(R.drawable.loading) // loading while loading
                 .error(R.drawable.error) // Error image if URL fails
                 .into(holder.Image);

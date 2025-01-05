@@ -20,19 +20,11 @@
             android:layout_height="wrap_content"
             android:paddingVertical="@dimen/_18sdp">
 
-            <ImageView
-                android:id="@+id/Image"
-                android:layout_width="@dimen/_45sdp"
-                android:layout_height="@dimen/_45sdp"
-                android:layout_centerHorizontal="true"
-                android:contentDescription="@string/CourseImage"
-                />
-
             <TextView
                 android:id="@+id/Name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/Image"
+
                 android:layout_marginTop="@dimen/_10sdp"
                 android:fontFamily="@font/fontstyle"
                 android:gravity="center_horizontal"
@@ -40,6 +32,17 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/_12ssp"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:layout_below="@+id/Name"
+                android:id="@+id/Image"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/CourseImage"
+                />
+
+
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

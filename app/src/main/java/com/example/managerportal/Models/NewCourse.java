@@ -2,20 +2,29 @@ package com.example.managerportal.Models;
 
 public class NewCourse {
     private String Name;
-    private String Image;
+    private String URL;
 
     public NewCourse(){} // Required for Firestore deserialization
     public String getName() {
         return Name;
     }
 
-    public String getImage() {
-        return Image;
+    public String getURL() {
+        return URL;
     }
 
-    public NewCourse(String name, String image) {
+    public void setName(String Name) {
+        this.Name = Name;
+    }
+
+    public void setURL(String URL) {
+        this.URL = URL;
+
+    }
+
+    public NewCourse(String name, String URL) {
         Name = name;
-        Image = image;
+        this.URL = URL;
     }
 
 }

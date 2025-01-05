@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <!--App Bar Layout is always mandatory which act as a container to hold toolbar. The main role of app bar layout is to provide some elevation which help in make UI more better-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!--RecyclerView for show courses-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/courses_layout"
+        />
+
+    <!-- If we want Floating Action Button to add course instead of select from action bar-->
+    <!--    <com.google.android.material.floating action button.FloatingActionButton-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:srcCompat="@drawable/add"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_marginHorizontal="@dimen/_25sdp"-->
+    <!--        android:layout_marginVertical="@dimen/_9sdp"-->
+    <!--        android:contentDescription="Add new Course"-->
+    <!--        android:backgroundTint="#E64A19"-->
+    <!--        app:rippleColor="#0288D1"-->
+    <!--        android:elevation="@dimen/_5sdp"/>-->
+    <!--    -->
+
+    <!-- If we want button here to add course instead of select from action bar -->
+    <!--   <Button-->
+    <!--       android:id="@+id/AddCourses"-->
+    <!--       android:layout_width="wrap_content"-->
+    <!--       android:layout_height="?actionBarSize"-->
+    <!--       android:layout_alignParentBottom="true"-->
+    <!--       android:text="Add New Courses"-->
+    <!--       android:textAllCaps="false"-->
+    <!--       android:textSize="@dimen/_13sdp"-->
+    <!--       android:textColor="#FFFFFF"-->
+    <!--        android:layout_marginHorizontal="@dimen/_20sdp"-->
+    <!--       android:drawableLeft="@drawable/add"-->
+    <!--       android:layout_centerHorizontal="true"-->
+    <!--       android:backgroundTint="#E64A19" />-->
+
+
+</LinearLayout>

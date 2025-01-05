@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">managerPortal</string>
+
+    <!-- Login Page Strings-->
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+
+    <!--Dashboard Page Strings-->
+    <string name="CourseImage">Course Image</string>
+
+    <!--Course Layout Strings-->
+    <string name="CourseName">Course Name</string>
+    <string name="ImageURI">Image URI (Automatic Generated)</string>
+    <string name="AddCourseImage">Add Course\'s Image to generate URI</string>
+    <string name="UploadCourse">Upload Course</string>
+
+    <string name="AddNewCourse">Add New Course</string>
+</resources>

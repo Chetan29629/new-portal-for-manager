@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "623024691315",
+    "project_id": "lmportal-decdb",
+    "storage_bucket": "lmportal-decdb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623024691315:android:73fd0e08d662027c21b206",
+        "android_client_info": {
+          "package_name": "com.example.canteen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZMNIWW6j53DE-ch6gQ2PHu_fcAQ67qhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623024691315:android:ee5ba882383381e721b206",
+        "android_client_info": {
+          "package_name": "com.example.lportalmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZMNIWW6j53DE-ch6gQ2PHu_fcAQ67qhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:623024691315:android:d8d7c40213fbbb9521b206",
+        "android_client_info": {
+          "package_name": "com.example.managerportal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZMNIWW6j53DE-ch6gQ2PHu_fcAQ67qhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

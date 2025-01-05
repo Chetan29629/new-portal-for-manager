@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!--BottomSheetDragHandleView to create  bottom sheet -->
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:id="@+id/BottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--    ImageButton to add image of Course-->
+    <ImageButton
+        android:id="@+id/CourseImageButton"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/AddCourseImage"
+        android:scaleType="centerCrop"
+        android:src="@drawable/addimage" />
+
+    <!--Edittext to take input Course  Name-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:hint="@string/CourseName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/CourseNameEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:letterSpacing="0.05"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Edittext to show Image URI that will be auto generated after image upload from gallery.  To prevent from user actions we use clickable="false" , cursorVisible="false" , focusable="auto"  -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:hint="@string/ImageURI">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ImageURIEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="auto"
+            android:inputType="textUri"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Progress bar to show that course image and name is adding to cloudinary storage in progress-->
+    <ProgressBar
+        android:id="@+id/Progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:progress="0"
+        android:max="100"
+        android:layout_marginVertical="@dimen/_15sdp"/>
+
+    <!--Upload Course Button to upload Course Name and Image to cloudinary storage-->
+    <Button
+        android:id="@+id/UploadCourseButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_15sdp"
+        android:text="@string/UploadCourse"
+        android:textSize="@dimen/_12ssp" />
+
+
+</LinearLayout>
